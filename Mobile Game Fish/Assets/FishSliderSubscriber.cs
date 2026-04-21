@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class ReelClickedAnimator : MonoBehaviour
+public class FishSliderSubscriber : MonoBehaviour
 {
-    public Animator animator;
     public ReelClickerScript reelClicker;
+    public FishSliderScript fishSliderScript;
 
     private void Start()
     {
@@ -16,8 +16,8 @@ public class ReelClickedAnimator : MonoBehaviour
 
     }
 
-    private void OnReelMoverClicked(bool hit, float damage)
+    private void OnReelMoverClicked(bool onGreen, float changeToSlider)
     {
-        animator.SetTrigger("clicked");
+        fishSliderScript.AddToTimerValue(changeToSlider);
     }
 }

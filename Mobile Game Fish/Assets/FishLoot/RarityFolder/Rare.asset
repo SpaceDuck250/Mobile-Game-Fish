@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 129fac47f1af9974490b8c920434c468, type: 3}
-  m_Name: Salmon
+  m_Script: {fileID: 11500000, guid: d15961c2f97c4b647a0f1969c1464c2a, type: 3}
+  m_Name: Rare
   m_EditorClassIdentifier: 
-  name: Salmon
-  sprite: {fileID: 0}
-  isFish: 1
-  rarity: {fileID: 11400000, guid: 2b54adf6e82c6e045b1efb84e373419a, type: 2}
-  reelMoverSpeed: 2.22
-  redAreaSizeFactor: 1
+  rarityName: Rare
+  rarityWeight: 0.25
+  fishPoolList:
+  - {fileID: 11400000, guid: a5a1baf0410f5a74c9cdb236383f6560, type: 2}
