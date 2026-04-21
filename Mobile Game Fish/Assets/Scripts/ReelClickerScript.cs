@@ -8,7 +8,7 @@ public class ReelClickerScript : MonoBehaviour
     public float redDamage;
     public float greenAttack;
 
-    public event Action<float> OnReelMoverClicked;
+    public event Action<bool> OnReelMoverClicked;
 
     public BoxCollider2D greenZone;
 
@@ -23,8 +23,7 @@ public class ReelClickerScript : MonoBehaviour
             inGreenZone = false;
         }
 
-        float attackDone = inGreenZone ? greenAttack : redDamage;
-        print("hit = " + inGreenZone);
-        OnReelMoverClicked?.Invoke(attackDone);
+        bool hit = inGreenZone;
+        OnReelMoverClicked?.Invoke(hit);
     }
 }
