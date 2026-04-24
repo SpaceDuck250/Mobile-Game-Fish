@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Salmon
   m_EditorClassIdentifier: 
   name: Salmon
-  sprite: {fileID: 0}
+  sprite: {fileID: -840889837774179832, guid: 3150bbce4741ca943bb4485673c6fb2f, type: 3}
   isFish: 1
-  rarity: {fileID: 11400000, guid: 2b54adf6e82c6e045b1efb84e373419a, type: 2}
+  rarity: 0
   reelMoverSpeed: 2.22
   redAreaSizeFactor: 1

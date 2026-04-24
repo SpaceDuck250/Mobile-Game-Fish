@@ -11,6 +11,9 @@ public class FishSliderScript : MonoBehaviour
 
     public bool runTimer;
 
+    public FishCatchingManager fishCatchingManager;
+    public FishGeneratorScript fishGeneratorScript;
+
     private void Start()
     {
         timer = timeUntilCaught / 2;
@@ -47,7 +50,7 @@ public class FishSliderScript : MonoBehaviour
         timer += amountInSeconds;
         if (timer >= timeUntilCaught)
         {
-            // Invoke a OnCaughtFish event
+            fishCatchingManager.OnFishFinallyCaught?.Invoke(fishGeneratorScript.GenerateRandomFish(fishGeneratorScript.PickRandomRarity()));
         }
 
         UpdateSlider();

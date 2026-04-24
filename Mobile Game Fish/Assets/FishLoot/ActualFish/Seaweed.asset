@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Seaweed
   m_EditorClassIdentifier: 
   name: Seaweed
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 693d2caeaff75114b8d1fd30128d4110, type: 3}
   isFish: 0
+  rarity: 0
   reelMoverSpeed: 4.51
   redAreaSizeFactor: 1

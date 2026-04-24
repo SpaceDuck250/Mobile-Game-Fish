@@ -11,7 +11,7 @@ public class FishCatchingManager : MonoBehaviour
 
     public int baitLeft;
 
-    public void TryFish()
+    public void TryReelingInFish()
     {
         if (baitLeft == 0)
         {
@@ -19,12 +19,12 @@ public class FishCatchingManager : MonoBehaviour
         }
 
         baitLeft--;
-
         OnFishGameStarted?.Invoke();
     }
 
     public void FinallyCatchFish()
     {
+        print("finally caught was invoked");
         Fish caughtFish = fishGenerator.GenerateRandomFish(fishGenerator.PickRandomRarity());
         OnFishFinallyCaught?.Invoke(caughtFish);
     }

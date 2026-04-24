@@ -7,9 +7,17 @@ public class FishType : ScriptableObject // General data not including unique rn
     public Sprite sprite;
     public bool isFish;
 
-    //public Rarity rarity;
+    //rarity just for display
+    public LootRarity rarity;
 
     // For minigame
     public float reelMoverSpeed;
     public float redAreaSizeFactor;
+}
+
+public enum LootRarity
+{
+    common,
+    rare,
+    legendary
 }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   name: Gold
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ea9dbd82c921e2342b66238e48aa44f5, type: 3}
   isFish: 0
+  rarity: 2
   reelMoverSpeed: 7.58
   redAreaSizeFactor: 1

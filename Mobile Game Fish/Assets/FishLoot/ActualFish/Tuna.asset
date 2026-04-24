@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Tuna
   m_EditorClassIdentifier: 
   name: Tuna
-  sprite: {fileID: 0}
+  sprite: {fileID: -788780015899293542, guid: 712e7e0828c34944cad71fbde3633f66, type: 3}
   isFish: 1
-  rarity: {fileID: 11400000, guid: c0fe32a806f3a0d4eafa44695a6e3faa, type: 2}
+  rarity: 1
   reelMoverSpeed: 4.2
   redAreaSizeFactor: 1
